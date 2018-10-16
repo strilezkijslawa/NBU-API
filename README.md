@@ -3,7 +3,7 @@ Classes for working with **National Bank of Ukraine API**.
 Currently class can get information about banks and current exchange UAH to foreign currencies and banking metals.
 
 <h3>Example</h3>
-<code>
+<pre>
     require_once "NBU_API.php";<br>
     require_once "extend/JSON_NBU_API.php";<br>
     require_once "extend/XML_NBU_API.php";<br>
@@ -15,10 +15,10 @@ Currently class can get information about banks and current exchange UAH to fore
     <br>
     print_r( $jsonNbuAPI->getBanks( array( 'typ' => 6 ), false ) );<br>
     <br>
-</code>
+</pre>
 
 <h3>Answers</h3>
-<code>
+<pre>
   SimpleXMLElement Object
 (
     [currency] => SimpleXMLElement Object
@@ -42,4 +42,4 @@ Currently class can get information about banks and current exchange UAH to fore
 "GLMFO":334851,"N_GOL":"ПАТ "ПУМБ"","NAME_E":null,"KOD_EDRPOU":null,"SHORTNAME":"Представництво ПУМБ в м.Лондон","NKB":"115","TYP":"6","KU":"0","N_OBL":"Не визначена","DEPCODE":"11526826626747000001","P_IND":null,"TNP":"м.","NP":"Лондон","ADRESS":"100 Pall Mall, office 19. St.James's,  SW1Y 5HP","KODT":"(44)","TELEFON":"2073213900","KSTAN":"5","N_STAN":"Тимчасово призупинено діяльність","D_STAN":null,"D_OPEN":"15.01.2003","D_CLOSE":null,"STAN_GOL":"1","NSTAN_GOL":"Нормальний"
  }
 ]
- </code>
+ </pre>
